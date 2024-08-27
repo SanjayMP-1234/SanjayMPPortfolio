@@ -4,8 +4,8 @@ import proj3 from '../assets/Employee.jpeg';
 const ProjectCardData = [
   {
     imgsrc: proj1,
-    title: "Ecommerce Website Design",
-    text: "Created a secure portal for administrators to manage projects, services, and more.Utilized React.js and Express.js for front-end and back-end development, respectively.Implemented best practices in JavaScript and various libraries for enhanced functionality.",
+    title: "Built a Secure Portal for company",
+    text: "Created a secure portal for administrators to manage projects services and more.Utilized React.js and Express.js for front-end and backend development, respectively.Implemented best practices in JavaScript and various libraries for enhanced functionality.",
     view: "https://github.com/SanjayMP-1234/project.git"
   },
   
