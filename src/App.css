@@ -1,38 +1,234 @@
-.App {
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+  background-color: #2c3e50;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: #ecf0f1;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #ff6347;
+}
+
+
+#hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('c:\Users\sanjay M P\OneDrive\Pictures\Camera Roll\WIN_20240821_14_14_36_Pro.jpg') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+}
+
+#hero h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+#hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.btn {
+  background-color: #ff6347;
+  padding: 15px 30px;
+  border-radius: 50px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #e04e3d;
+  transform: scale(1.05);
+}
+
+
+#about {
+  padding: 100px 0;
+  background-color: #ecf0f1;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#about p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+#projects {
+  padding: 100px 0;
+  text-align: center;
+  background-color: #fff;
+}
+
+#projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #2c3e50;
+}
+
+.project-grid {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.project-card {
+  background-color: #ecf0f1;
+  padding: 20px;
+  border-radius: 15px;
+  width: calc(33.333% - 30px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  text-align: left;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #7f8c8d;
+}
+
+.project-card a {
+  color: #ff6347;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.project-card a:hover {
+  color: #e04e3d;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+
+#contact {
+  padding: 100px 0;
+  background-color: #2c3e50;
   color: white;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+#contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
+#contact p {
+  font-size: 1.2rem;
+}
+
+#contact a {
+  color: #ff6347;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+#contact a:hover {
+  color: #e04e3d;
+}
+
+footer {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 0;
+}
+
+
+@keyframes fadeInDown {
   from {
-    transform: rotate(0deg);
+      opacity: 0;
+      transform: translateY(-50px);
   }
   to {
-    transform: rotate(360deg);
+      opacity: 1;
+      transform: translateY(0);
   }
 }
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
