@@ -38,6 +38,7 @@
 }
 
 .profile-img {
+  paddin-top: 50px;
   border-radius: 50%;
   width: 250px;
   height: 250px;
